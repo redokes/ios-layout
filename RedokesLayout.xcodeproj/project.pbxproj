@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4462A7F15A2242D0055CA51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462A7E15A2242D0055CA51 /* Foundation.framework */; };
+		E4462A8D15A2242D0055CA51 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462A8C15A2242D0055CA51 /* SenTestingKit.framework */; };
+		E4462A8F15A2242D0055CA51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462A8E15A2242D0055CA51 /* UIKit.framework */; };
+		E4462A9015A2242D0055CA51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462A7E15A2242D0055CA51 /* Foundation.framework */; };
+		E4462A9315A2242D0055CA51 /* libRedokesLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462A7B15A2242D0055CA51 /* libRedokesLayout.a */; };
+		E4462A9915A2242D0055CA51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4462A9715A2242D0055CA51 /* InfoPlist.strings */; };
+		E4462A9C15A2242D0055CA51 /* RedokesLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4462A9B15A2242D0055CA51 /* RedokesLayoutTests.m */; };
+		E4462AAF15A2250C0055CA51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462A8E15A2242D0055CA51 /* UIKit.framework */; };
+		E4462AB015A2250C0055CA51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462A7E15A2242D0055CA51 /* Foundation.framework */; };
+		E4462AB215A2250C0055CA51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462AB115A2250C0055CA51 /* CoreGraphics.framework */; };
+		E4462AB815A2250C0055CA51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4462AB615A2250C0055CA51 /* InfoPlist.strings */; };
+		E4462ABA15A2250C0055CA51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4462AB915A2250C0055CA51 /* main.m */; };
+		E4462ABE15A2250C0055CA51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4462ABD15A2250C0055CA51 /* AppDelegate.m */; };
+		E4462AC515A2250C0055CA51 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462A8C15A2242D0055CA51 /* SenTestingKit.framework */; };
+		E4462AC615A2250C0055CA51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462A8E15A2242D0055CA51 /* UIKit.framework */; };
+		E4462AC715A2250C0055CA51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462A7E15A2242D0055CA51 /* Foundation.framework */; };
+		E4462ACF15A2250C0055CA51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4462ACD15A2250C0055CA51 /* InfoPlist.strings */; };
+		E4462AD215A2250C0055CA51 /* LayoutExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4462AD115A2250C0055CA51 /* LayoutExamplesTests.m */; };
+		E4462AD915A225170055CA51 /* libRedokesLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462A7B15A2242D0055CA51 /* libRedokesLayout.a */; };
+		E4462ADA15A225650055CA51 /* RedokesLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = E4462A8315A2242D0055CA51 /* RedokesLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4462D5E15A225EC0055CA51 /* RedokesLayoutBase.h in Headers */ = {isa = PBXBuildFile; fileRef = E4462D4215A225EC0055CA51 /* RedokesLayoutBase.h */; };
+		E4462D5F15A225EC0055CA51 /* RedokesLayoutBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E4462D4315A225EC0055CA51 /* RedokesLayoutBase.m */; };
+		E4462D6015A225EC0055CA51 /* RedokesLayoutHorizontal.h in Headers */ = {isa = PBXBuildFile; fileRef = E4462D4415A225EC0055CA51 /* RedokesLayoutHorizontal.h */; };
+		E4462D6115A225EC0055CA51 /* RedokesLayoutHorizontal.m in Sources */ = {isa = PBXBuildFile; fileRef = E4462D4515A225EC0055CA51 /* RedokesLayoutHorizontal.m */; };
+		E4462D6215A225EC0055CA51 /* RedokesLayoutBox.h in Headers */ = {isa = PBXBuildFile; fileRef = E4462D4615A225EC0055CA51 /* RedokesLayoutBox.h */; };
+		E4462D6315A225EC0055CA51 /* RedokesLayoutBox.m in Sources */ = {isa = PBXBuildFile; fileRef = E4462D4715A225EC0055CA51 /* RedokesLayoutBox.m */; };
+		E4462D6415A225EC0055CA51 /* RedokesLayoutConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E4462D4815A225EC0055CA51 /* RedokesLayoutConfig.h */; };
+		E4462D6515A225EC0055CA51 /* RedokesLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E4462D4915A225EC0055CA51 /* RedokesLayoutConfig.m */; };
+		E4462D7215A225EC0055CA51 /* RedokesLayoutVertical.h in Headers */ = {isa = PBXBuildFile; fileRef = E4462D5A15A225EC0055CA51 /* RedokesLayoutVertical.h */; };
+		E4462D7315A225EC0055CA51 /* RedokesLayoutVertical.m in Sources */ = {isa = PBXBuildFile; fileRef = E4462D5B15A225EC0055CA51 /* RedokesLayoutVertical.m */; };
+		E4462D7515A2263E0055CA51 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462D7415A2263E0055CA51 /* MapKit.framework */; };
+		E4462D7715A226430055CA51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462D7615A226430055CA51 /* QuartzCore.framework */; };
+		E4462D7915A226470055CA51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462D7815A226470055CA51 /* UIKit.framework */; };
+		E4462D7A15A2264E0055CA51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4462AB115A2250C0055CA51 /* CoreGraphics.framework */; };
+		E4462D8315A22BEE0055CA51 /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4462D8015A22BEE0055CA51 /* TestController.m */; };
+		E4462D8415A22BEE0055CA51 /* TestLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E4462D8215A22BEE0055CA51 /* TestLayout.m */; };
+		E4462D8615A232260055CA51 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4462D8515A232260055CA51 /* TestView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4462A9115A2242D0055CA51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4462A7215A2242D0055CA51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4462A7A15A2242D0055CA51;
+			remoteInfo = RedokesLayout;
+		};
+		E4462AC815A2250C0055CA51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4462A7215A2242D0055CA51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4462AAC15A2250C0055CA51;
+			remoteInfo = LayoutExamples;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4462A7B15A2242D0055CA51 /* libRedokesLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRedokesLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4462A7E15A2242D0055CA51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E4462A8215A2242D0055CA51 /* RedokesLayout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RedokesLayout-Prefix.pch"; sourceTree = "<group>"; };
+		E4462A8315A2242D0055CA51 /* RedokesLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedokesLayout.h; sourceTree = "<group>"; };
+		E4462A8B15A2242D0055CA51 /* RedokesLayoutTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedokesLayoutTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4462A8C15A2242D0055CA51 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E4462A8E15A2242D0055CA51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E4462A9615A2242D0055CA51 /* RedokesLayoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedokesLayoutTests-Info.plist"; sourceTree = "<group>"; };
+		E4462A9815A2242D0055CA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4462A9A15A2242D0055CA51 /* RedokesLayoutTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedokesLayoutTests.h; sourceTree = "<group>"; };
+		E4462A9B15A2242D0055CA51 /* RedokesLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedokesLayoutTests.m; sourceTree = "<group>"; };
+		E4462AAD15A2250C0055CA51 /* LayoutExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4462AB115A2250C0055CA51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E4462AB515A2250C0055CA51 /* LayoutExamples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LayoutExamples-Info.plist"; sourceTree = "<group>"; };
+		E4462AB715A2250C0055CA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4462AB915A2250C0055CA51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4462ABB15A2250C0055CA51 /* LayoutExamples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LayoutExamples-Prefix.pch"; sourceTree = "<group>"; };
+		E4462ABC15A2250C0055CA51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4462ABD15A2250C0055CA51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4462AC415A2250C0055CA51 /* LayoutExamplesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayoutExamplesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4462ACC15A2250C0055CA51 /* LayoutExamplesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LayoutExamplesTests-Info.plist"; sourceTree = "<group>"; };
+		E4462ACE15A2250C0055CA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4462AD015A2250C0055CA51 /* LayoutExamplesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutExamplesTests.h; sourceTree = "<group>"; };
+		E4462AD115A2250C0055CA51 /* LayoutExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutExamplesTests.m; sourceTree = "<group>"; };
+		E4462D4215A225EC0055CA51 /* RedokesLayoutBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedokesLayoutBase.h; sourceTree = "<group>"; };
+		E4462D4315A225EC0055CA51 /* RedokesLayoutBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedokesLayoutBase.m; sourceTree = "<group>"; };
+		E4462D4415A225EC0055CA51 /* RedokesLayoutHorizontal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedokesLayoutHorizontal.h; sourceTree = "<group>"; };
+		E4462D4515A225EC0055CA51 /* RedokesLayoutHorizontal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedokesLayoutHorizontal.m; sourceTree = "<group>"; };
+		E4462D4615A225EC0055CA51 /* RedokesLayoutBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedokesLayoutBox.h; sourceTree = "<group>"; };
+		E4462D4715A225EC0055CA51 /* RedokesLayoutBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedokesLayoutBox.m; sourceTree = "<group>"; };
+		E4462D4815A225EC0055CA51 /* RedokesLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedokesLayoutConfig.h; sourceTree = "<group>"; };
+		E4462D4915A225EC0055CA51 /* RedokesLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedokesLayoutConfig.m; sourceTree = "<group>"; };
+		E4462D5A15A225EC0055CA51 /* RedokesLayoutVertical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedokesLayoutVertical.h; sourceTree = "<group>"; };
+		E4462D5B15A225EC0055CA51 /* RedokesLayoutVertical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedokesLayoutVertical.m; sourceTree = "<group>"; };
+		E4462D7415A2263E0055CA51 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E4462D7615A226430055CA51 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E4462D7815A226470055CA51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E4462D7F15A22BEE0055CA51 /* TestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestController.h; sourceTree = "<group>"; };
+		E4462D8015A22BEE0055CA51 /* TestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestController.m; sourceTree = "<group>"; };
+		E4462D8115A22BEE0055CA51 /* TestLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayout.h; sourceTree = "<group>"; };
+		E4462D8215A22BEE0055CA51 /* TestLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayout.m; sourceTree = "<group>"; };
+		E4462D8515A232260055CA51 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4462A7815A2242D0055CA51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4462D7A15A2264E0055CA51 /* CoreGraphics.framework in Frameworks */,
+				E4462D7915A226470055CA51 /* UIKit.framework in Frameworks */,
+				E4462D7715A226430055CA51 /* QuartzCore.framework in Frameworks */,
+				E4462D7515A2263E0055CA51 /* MapKit.framework in Frameworks */,
+				E4462A7F15A2242D0055CA51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4462A8715A2242D0055CA51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4462A8D15A2242D0055CA51 /* SenTestingKit.framework in Frameworks */,
+				E4462A8F15A2242D0055CA51 /* UIKit.framework in Frameworks */,
+				E4462A9015A2242D0055CA51 /* Foundation.framework in Frameworks */,
+				E4462A9315A2242D0055CA51 /* libRedokesLayout.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4462AAA15A2250C0055CA51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4462AD915A225170055CA51 /* libRedokesLayout.a in Frameworks */,
+				E4462AAF15A2250C0055CA51 /* UIKit.framework in Frameworks */,
+				E4462AB015A2250C0055CA51 /* Foundation.framework in Frameworks */,
+				E4462AB215A2250C0055CA51 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4462AC015A2250C0055CA51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4462AC515A2250C0055CA51 /* SenTestingKit.framework in Frameworks */,
+				E4462AC615A2250C0055CA51 /* UIKit.framework in Frameworks */,
+				E4462AC715A2250C0055CA51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4462A7015A2242D0055CA51 = {
+			isa = PBXGroup;
+			children = (
+				E4462A8015A2242D0055CA51 /* RedokesLayout */,
+				E4462A9415A2242D0055CA51 /* RedokesLayoutTests */,
+				E4462AB315A2250C0055CA51 /* LayoutExamples */,
+				E4462ACA15A2250C0055CA51 /* LayoutExamplesTests */,
+				E4462A7D15A2242D0055CA51 /* Frameworks */,
+				E4462A7C15A2242D0055CA51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4462A7C15A2242D0055CA51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4462A7B15A2242D0055CA51 /* libRedokesLayout.a */,
+				E4462A8B15A2242D0055CA51 /* RedokesLayoutTests.octest */,
+				E4462AAD15A2250C0055CA51 /* LayoutExamples.app */,
+				E4462AC415A2250C0055CA51 /* LayoutExamplesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4462A7D15A2242D0055CA51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4462D7815A226470055CA51 /* UIKit.framework */,
+				E4462D7615A226430055CA51 /* QuartzCore.framework */,
+				E4462D7415A2263E0055CA51 /* MapKit.framework */,
+				E4462A7E15A2242D0055CA51 /* Foundation.framework */,
+				E4462A8C15A2242D0055CA51 /* SenTestingKit.framework */,
+				E4462A8E15A2242D0055CA51 /* UIKit.framework */,
+				E4462AB115A2250C0055CA51 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4462A8015A2242D0055CA51 /* RedokesLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E4462D3F15A225EC0055CA51 /* src */,
+				E4462A8315A2242D0055CA51 /* RedokesLayout.h */,
+				E4462A8115A2242D0055CA51 /* Supporting Files */,
+			);
+			path = RedokesLayout;
+			sourceTree = "<group>";
+		};
+		E4462A8115A2242D0055CA51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4462A8215A2242D0055CA51 /* RedokesLayout-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4462A9415A2242D0055CA51 /* RedokesLayoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4462A9A15A2242D0055CA51 /* RedokesLayoutTests.h */,
+				E4462A9B15A2242D0055CA51 /* RedokesLayoutTests.m */,
+				E4462A9515A2242D0055CA51 /* Supporting Files */,
+			);
+			path = RedokesLayoutTests;
+			sourceTree = "<group>";
+		};
+		E4462A9515A2242D0055CA51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4462A9615A2242D0055CA51 /* RedokesLayoutTests-Info.plist */,
+				E4462A9715A2242D0055CA51 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4462AB315A2250C0055CA51 /* LayoutExamples */ = {
+			isa = PBXGroup;
+			children = (
+				E4462D7F15A22BEE0055CA51 /* TestController.h */,
+				E4462D8015A22BEE0055CA51 /* TestController.m */,
+				E4462D8115A22BEE0055CA51 /* TestLayout.h */,
+				E4462D8215A22BEE0055CA51 /* TestLayout.m */,
+				E4462ABC15A2250C0055CA51 /* AppDelegate.h */,
+				E4462ABD15A2250C0055CA51 /* AppDelegate.m */,
+				E4462AB415A2250C0055CA51 /* Supporting Files */,
+				E4462D8515A232260055CA51 /* TestView.xib */,
+			);
+			path = LayoutExamples;
+			sourceTree = "<group>";
+		};
+		E4462AB415A2250C0055CA51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4462AB515A2250C0055CA51 /* LayoutExamples-Info.plist */,
+				E4462AB615A2250C0055CA51 /* InfoPlist.strings */,
+				E4462AB915A2250C0055CA51 /* main.m */,
+				E4462ABB15A2250C0055CA51 /* LayoutExamples-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4462ACA15A2250C0055CA51 /* LayoutExamplesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4462AD015A2250C0055CA51 /* LayoutExamplesTests.h */,
+				E4462AD115A2250C0055CA51 /* LayoutExamplesTests.m */,
+				E4462ACB15A2250C0055CA51 /* Supporting Files */,
+			);
+			path = LayoutExamplesTests;
+			sourceTree = "<group>";
+		};
+		E4462ACB15A2250C0055CA51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4462ACC15A2250C0055CA51 /* LayoutExamplesTests-Info.plist */,
+				E4462ACD15A2250C0055CA51 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4462D3F15A225EC0055CA51 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4462D4215A225EC0055CA51 /* RedokesLayoutBase.h */,
+				E4462D4315A225EC0055CA51 /* RedokesLayoutBase.m */,
+				E4462D4415A225EC0055CA51 /* RedokesLayoutHorizontal.h */,
+				E4462D4515A225EC0055CA51 /* RedokesLayoutHorizontal.m */,
+				E4462D4615A225EC0055CA51 /* RedokesLayoutBox.h */,
+				E4462D4715A225EC0055CA51 /* RedokesLayoutBox.m */,
+				E4462D4815A225EC0055CA51 /* RedokesLayoutConfig.h */,
+				E4462D4915A225EC0055CA51 /* RedokesLayoutConfig.m */,
+				E4462D5A15A225EC0055CA51 /* RedokesLayoutVertical.h */,
+				E4462D5B15A225EC0055CA51 /* RedokesLayoutVertical.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E4462A7915A2242D0055CA51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4462ADA15A225650055CA51 /* RedokesLayout.h in Headers */,
+				E4462D5E15A225EC0055CA51 /* RedokesLayoutBase.h in Headers */,
+				E4462D6015A225EC0055CA51 /* RedokesLayoutHorizontal.h in Headers */,
+				E4462D6215A225EC0055CA51 /* RedokesLayoutBox.h in Headers */,
+				E4462D6415A225EC0055CA51 /* RedokesLayoutConfig.h in Headers */,
+				E4462D7215A225EC0055CA51 /* RedokesLayoutVertical.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E4462A7A15A2242D0055CA51 /* libRedokesLayout.a */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4462A9F15A2242D0055CA51 /* Build configuration list for PBXNativeTarget "libRedokesLayout.a" */;
+			buildPhases = (
+				E4462A7715A2242D0055CA51 /* Sources */,
+				E4462A7815A2242D0055CA51 /* Frameworks */,
+				E4462A7915A2242D0055CA51 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libRedokesLayout.a;
+			productName = RedokesLayout;
+			productReference = E4462A7B15A2242D0055CA51 /* libRedokesLayout.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E4462A8A15A2242D0055CA51 /* RedokesLayoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4462AA215A2242D0055CA51 /* Build configuration list for PBXNativeTarget "RedokesLayoutTests" */;
+			buildPhases = (
+				E4462A8615A2242D0055CA51 /* Sources */,
+				E4462A8715A2242D0055CA51 /* Frameworks */,
+				E4462A8815A2242D0055CA51 /* Resources */,
+				E4462A8915A2242D0055CA51 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4462A9215A2242D0055CA51 /* PBXTargetDependency */,
+			);
+			name = RedokesLayoutTests;
+			productName = RedokesLayoutTests;
+			productReference = E4462A8B15A2242D0055CA51 /* RedokesLayoutTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E4462AAC15A2250C0055CA51 /* LayoutExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4462AD315A2250C0055CA51 /* Build configuration list for PBXNativeTarget "LayoutExamples" */;
+			buildPhases = (
+				E4462AA915A2250C0055CA51 /* Sources */,
+				E4462AAA15A2250C0055CA51 /* Frameworks */,
+				E4462AAB15A2250C0055CA51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LayoutExamples;
+			productName = LayoutExamples;
+			productReference = E4462AAD15A2250C0055CA51 /* LayoutExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4462AC315A2250C0055CA51 /* LayoutExamplesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4462AD615A2250C0055CA51 /* Build configuration list for PBXNativeTarget "LayoutExamplesTests" */;
+			buildPhases = (
+				E4462ABF15A2250C0055CA51 /* Sources */,
+				E4462AC015A2250C0055CA51 /* Frameworks */,
+				E4462AC115A2250C0055CA51 /* Resources */,
+				E4462AC215A2250C0055CA51 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4462AC915A2250C0055CA51 /* PBXTargetDependency */,
+			);
+			name = LayoutExamplesTests;
+			productName = LayoutExamplesTests;
+			productReference = E4462AC415A2250C0055CA51 /* LayoutExamplesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4462A7215A2242D0055CA51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = JaredLewis;
+			};
+			buildConfigurationList = E4462A7515A2242D0055CA51 /* Build configuration list for PBXProject "RedokesLayout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E4462A7015A2242D0055CA51;
+			productRefGroup = E4462A7C15A2242D0055CA51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4462A7A15A2242D0055CA51 /* libRedokesLayout.a */,
+				E4462A8A15A2242D0055CA51 /* RedokesLayoutTests */,
+				E4462AAC15A2250C0055CA51 /* LayoutExamples */,
+				E4462AC315A2250C0055CA51 /* LayoutExamplesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4462A8815A2242D0055CA51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4462A9915A2242D0055CA51 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4462AAB15A2250C0055CA51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4462AB815A2250C0055CA51 /* InfoPlist.strings in Resources */,
+				E4462D8615A232260055CA51 /* TestView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4462AC115A2250C0055CA51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4462ACF15A2250C0055CA51 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4462A8915A2242D0055CA51 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		E4462AC215A2250C0055CA51 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4462A7715A2242D0055CA51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4462D5F15A225EC0055CA51 /* RedokesLayoutBase.m in Sources */,
+				E4462D6115A225EC0055CA51 /* RedokesLayoutHorizontal.m in Sources */,
+				E4462D6315A225EC0055CA51 /* RedokesLayoutBox.m in Sources */,
+				E4462D6515A225EC0055CA51 /* RedokesLayoutConfig.m in Sources */,
+				E4462D7315A225EC0055CA51 /* RedokesLayoutVertical.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4462A8615A2242D0055CA51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4462A9C15A2242D0055CA51 /* RedokesLayoutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4462AA915A2250C0055CA51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4462ABA15A2250C0055CA51 /* main.m in Sources */,
+				E4462ABE15A2250C0055CA51 /* AppDelegate.m in Sources */,
+				E4462D8315A22BEE0055CA51 /* TestController.m in Sources */,
+				E4462D8415A22BEE0055CA51 /* TestLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4462ABF15A2250C0055CA51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4462AD215A2250C0055CA51 /* LayoutExamplesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4462A9215A2242D0055CA51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4462A7A15A2242D0055CA51 /* libRedokesLayout.a */;
+			targetProxy = E4462A9115A2242D0055CA51 /* PBXContainerItemProxy */;
+		};
+		E4462AC915A2250C0055CA51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4462AAC15A2250C0055CA51 /* LayoutExamples */;
+			targetProxy = E4462AC815A2250C0055CA51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4462A9715A2242D0055CA51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4462A9815A2242D0055CA51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E4462AB615A2250C0055CA51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4462AB715A2250C0055CA51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E4462ACD15A2250C0055CA51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4462ACE15A2250C0055CA51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4462A9D15A2242D0055CA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E4462A9E15A2242D0055CA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4462AA015A2242D0055CA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RedokesLayout.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../akimbo-core/Frameworks\"",
+					"\"$(SRCROOT)/../fireplug-core/Frameworks\"",
+					"\"$(SRCROOT)/../fireplug-ios\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedokesLayout/RedokesLayout-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = RedokesLayout;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E4462AA115A2242D0055CA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RedokesLayout.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../akimbo-core/Frameworks\"",
+					"\"$(SRCROOT)/../fireplug-core/Frameworks\"",
+					"\"$(SRCROOT)/../fireplug-ios\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedokesLayout/RedokesLayout-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = RedokesLayout;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E4462AA315A2242D0055CA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedokesLayout/RedokesLayout-Prefix.pch";
+				INFOPLIST_FILE = "RedokesLayoutTests/RedokesLayoutTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E4462AA415A2242D0055CA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedokesLayout/RedokesLayout-Prefix.pch";
+				INFOPLIST_FILE = "RedokesLayoutTests/RedokesLayoutTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		E4462AD415A2250C0055CA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LayoutExamples/LayoutExamples-Prefix.pch";
+				INFOPLIST_FILE = "LayoutExamples/LayoutExamples-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4462AD515A2250C0055CA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LayoutExamples/LayoutExamples-Prefix.pch";
+				INFOPLIST_FILE = "LayoutExamples/LayoutExamples-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E4462AD715A2250C0055CA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LayoutExamples.app/LayoutExamples";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LayoutExamples/LayoutExamples-Prefix.pch";
+				INFOPLIST_FILE = "LayoutExamplesTests/LayoutExamplesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E4462AD815A2250C0055CA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LayoutExamples.app/LayoutExamples";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LayoutExamples/LayoutExamples-Prefix.pch";
+				INFOPLIST_FILE = "LayoutExamplesTests/LayoutExamplesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4462A7515A2242D0055CA51 /* Build configuration list for PBXProject "RedokesLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4462A9D15A2242D0055CA51 /* Debug */,
+				E4462A9E15A2242D0055CA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4462A9F15A2242D0055CA51 /* Build configuration list for PBXNativeTarget "libRedokesLayout.a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4462AA015A2242D0055CA51 /* Debug */,
+				E4462AA115A2242D0055CA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4462AA215A2242D0055CA51 /* Build configuration list for PBXNativeTarget "RedokesLayoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4462AA315A2242D0055CA51 /* Debug */,
+				E4462AA415A2242D0055CA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4462AD315A2250C0055CA51 /* Build configuration list for PBXNativeTarget "LayoutExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4462AD415A2250C0055CA51 /* Debug */,
+				E4462AD515A2250C0055CA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4462AD615A2250C0055CA51 /* Build configuration list for PBXNativeTarget "LayoutExamplesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4462AD715A2250C0055CA51 /* Debug */,
+				E4462AD815A2250C0055CA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4462A7215A2242D0055CA51 /* Project object */;
+}
